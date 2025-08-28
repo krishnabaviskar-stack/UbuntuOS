@@ -5,7 +5,7 @@ import { displaySettings } from './components/apps/settings';
 import { displayChrome } from './components/apps/chrome';
 import { displayTrash } from './components/apps/trash';
 import { displayGedit } from './components/apps/gedit';
-import { displayAboutVivek } from './components/apps/vivek';
+import { displayAboutKrishna } from './components/apps/krishna';
 import { displayTerminalCalc } from './components/apps/calc';
 
 const apps = [
@@ -28,13 +28,13 @@ const apps = [
         screen: displayTerminalCalc,
     },
     {
-        id: "about-vivek",
-        title: "About Vivek",
+        id: "about-krishna",
+        title: "About Krishna",
         icon: './themes/Yaru/system/user-home.png',
         disabled: false,
         favourite: true,
         desktop_shortcut: true,
-        screen: displayAboutVivek,
+        screen: displayAboutKrishna,
     },
     {
         id: "vscode",
@@ -98,7 +98,7 @@ const apps = [
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
-        url: "https://github.com/vivek9patel",
+        url: "https://github.com/krishnabaviskar",
         screen: () => {},
     },
     {
@@ -109,7 +109,7 @@ const apps = [
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
-        url: "https://www.vivek9patel.com/tars"
+        url: "https://www.krishnabaviskar.com/tars"
     },
 ]
 

@@ -348,6 +348,12 @@ export class Desktop extends Component {
     }
 
     openApp = (objId) => {
+        const app = apps.find(app => app.id === objId);
+
+        if (app && app.isExternalApp) {
+            window.open(app.url, '_blank');
+            return;
+        }
 
         // google analytics
         ReactGA.event({

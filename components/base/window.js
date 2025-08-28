@@ -7,6 +7,7 @@ import { displayTerminal } from '../apps/terminal'
 export class Window extends Component {
     constructor() {
         super();
+        this.nodeRef = React.createRef();
         this.id = null;
         this.startX = 60;
         this.startY = 10;
@@ -162,6 +163,7 @@ export class Window extends Component {
     render() {
         return (
             <Draggable
+                nodeRef={this.nodeRef}
                 axis="both"
                 handle=".bg-ub-window-title"
                 grid={[1, 1]}
@@ -173,7 +175,7 @@ export class Window extends Component {
                 defaultPosition={{ x: this.startX, y: this.startY }}
                 bounds={{ left: 0, top: 0, right: this.state.parentSize.width, bottom: this.state.parentSize.height }}
             >
-                <div style={{ width: `${this.state.width}%`, height: `${this.state.height}%` }}
+                <div ref={this.nodeRef} style={{ width: `${this.state.width}%`, height: `${this.state.height}%` }}
                     className={this.state.cursorType + " " + (this.state.closed ? " closed-window " : "") + (this.state.maximized ? " duration-300 rounded-none" : " rounded-lg rounded-b-none") + (this.props.minimized ? " opacity-0 invisible duration-200 " : "") + (this.props.isFocused ? " z-30 " : " z-20 notFocused") + " opened-window overflow-hidden min-w-1/4 min-h-1/4 main-window absolute window-shadow border-black border-opacity-40 border border-t-0 flex flex-col"}
                     id={this.id}
                 >
@@ -291,7 +293,10 @@ export class WindowMainScreen extends Component {
     render() {
         return (
             <div className={"w-full flex-grow z-20 max-h-full overflow-y-auto windowMainScreen" + (this.state.setDarkBg ? " bg-ub-drk-abrgn " : " bg-ub-cool-grey")}>
-                {this.props.addFolder ? displayTerminal(this.props.addFolder, this.props.openApp) : this.props.screen()}
+                {this.props.addFolder
+                    ? displayTerminal(this.props.addFolder, this.props.openApp)
+                    : (this.props.screen && <this.props.screen />)
+                }
             </div>
         )
     }
