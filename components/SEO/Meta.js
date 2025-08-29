@@ -5,9 +5,9 @@ export default function Meta() {
     return (
         <Head>
            /* Primary Meta Tags */
-            <title>Krishna Portfolio - Computer Engineering Student</title>
+            <title>Krishna Baviskar</title>
             <meta charSet="utf-8" />
-            <meta name="title" content="Krishna Portfolio - Computer Engineering Student" />
+            <meta name="title" content="Krishna Baviskar" />
             <meta name="description"
                 content="Krishna's (KrishnaPortfolio) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
             <meta name="author" content="Krishna (KrishnaPortfolio)" />
@@ -22,20 +22,20 @@ export default function Meta() {
             /* Search Engine */
             <meta name="image" content="images/logos/fevicon.png" />
             /* Schema.org for Google */
-            <meta itemProp="name" content="Krishna Portfolio - Computer Engineering Student" />
+            <meta itemProp="name" content="Krishna Baviskar" />
             <meta itemProp="description"
                 content="Krishna's (KrishnaPortfolio) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
             <meta itemProp="image" content="images/logos/fevicon.png" />
             /* Twitter */
             <meta name="twitter:card" content="summary" />
-            <meta name="twitter:title" content="Krishna Portfolio - Computer Engineering Student" />
+            <meta name="twitter:title" content="Krishna Baviskar" />
             <meta name="twitter:description"
                 content="Krishna's (KrishnaPortfolio) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
             <meta name="twitter:site" content="KrishnaPortfolio" />
             <meta name="twitter:creator" content="KrishnaPortfolio" />
             <meta name="twitter:image:src" content="images/logos/logo_1024.png" />
             /* Open Graph general (Facebook, Pinterest & Google+) */
-            <meta name="og:title" content="Krishna Portfolio - Computer Engineering Student" />
+            <meta name="og:title" content="Krishna Baviskar" />
             <meta name="og:description"
                 content="Krishna's (KrishnaPortfolio) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
             <meta name="og:image" content="images/logos/logo_1200.png" />
@@ -44,7 +44,7 @@ export default function Meta() {
             <meta name="og:locale" content="en_IN" />
             <meta name="og:type" content="website" />
 
-            <link rel="icon" href="images/logos/fevicon.svg" />
+            <link rel="icon" href="images/logos/fevicon.png" />
             <link rel="apple-touch-icon" href="images/logos/logo.png" />
         </Head>
     )

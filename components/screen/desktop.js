@@ -382,8 +382,8 @@ export class Desktop extends Component {
         //if app is already opened
         if (this.app_stack.includes(objId)) this.focus(objId);
         else {
-            let closed_windows = this.state.closed_windows;
-            let favourite_apps = this.state.favourite_apps;
+            let closed_windows = { ...this.state.closed_windows };
+            let favourite_apps = { ...this.state.favourite_apps };
             var frequentApps = localStorage.getItem('frequentApps') ? JSON.parse(localStorage.getItem('frequentApps')) : [];
             var currentApp = frequentApps.find(app => app.id === objId);
             if (currentApp) {
@@ -408,17 +408,16 @@ export class Desktop extends Component {
 
             localStorage.setItem("frequentApps", JSON.stringify(frequentApps));
 
-            setTimeout(() => {
-                favourite_apps[objId] = true; // adds opened app to sideBar
-                closed_windows[objId] = false; // openes app's window
-                this.setState({ closed_windows, favourite_apps, allAppsView: false }, this.focus(objId));
+            favourite_apps[objId] = true; // adds opened app to sideBar
+            closed_windows[objId] = false; // openes app's window
+            this.setState({ closed_windows, favourite_apps, allAppsView: false }, () => {
+                this.focus(objId);
                 this.app_stack.push(objId);
-            }, 200);
+            });
         }
     }
 
     closeApp = (objId) => {
-
         // remove app from the app stack
         this.app_stack.splice(this.app_stack.indexOf(objId), 1);
 
@@ -427,8 +426,8 @@ export class Desktop extends Component {
         this.hideSideBar(null, false);
 
         // close window
-        let closed_windows = this.state.closed_windows;
-        let favourite_apps = this.state.favourite_apps;
+        let closed_windows = { ...this.state.closed_windows };
+        let favourite_apps = { ...this.state.favourite_apps };
 
         if (this.initFavourite[objId] === false) favourite_apps[objId] = false; // if user default app is not favourite, remove from sidebar
         closed_windows[objId] = true; // closes the app's window

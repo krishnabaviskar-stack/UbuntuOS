@@ -98,18 +98,18 @@ const apps = [
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
-        url: "https://github.com/krishnabaviskar",
+        url: "https://github.com/krishna-baviskar",
         screen: () => {},
     },
     {
-        id: "tars",
-        title: "Ask Tars",
-        icon: './themes/Yaru/apps/tars.svg',
+        id: "linkedin",
+        title: "LinkedIn",
+        icon: './themes/Yaru/apps/linkedin.svg',
         disabled: false,
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
-        url: "https://www.krishnabaviskar.com/tars"
+        url: "https://www.linkedin.com/in/krishna-baviskar"
     },
 ]
 

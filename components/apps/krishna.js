@@ -75,7 +75,7 @@ export class AboutKrishna extends Component {
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Resume</span>
                 </div>
                 <div className='my-0.5 w-28 md:w-full h-8 px-2 md:px-2.5 flex' >
-                    {/* <iframe src="https://github.com/sponsors/krishnabaviskar40/button" title="Sponsor krishnabaviskar40" width={"100%"} height={"100%"} ></iframe> */}
+                    {/* <iframe src="https://github.com/sponsors/krishna-baviskar/button" title="Sponsor krishnabaviskar40" width={"100%"} height={"100%"} ></iframe> */}
                 </div>
             </>
         );
@@ -126,15 +126,14 @@ function About() {
             </div>
             <ul className=" mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list">
                 <li className=" list-pc">I’m currently pursuing a B.Tech in Computer Engineering!</li>
-                <li className=" mt-3 list-building">💡 My journey began with a diploma in Mechanical Engineering, giving me a unique problem-solving edge and design perspective.</li>
-                <li className=" mt-3 list-time">🌐 I specialize in creating secure, modern web applications, working across multiple programming languages and frameworks.</li>
-                <li className=" mt-3 list-star">🛡️ Cybersecurity is my forte—I'm always exploring the latest vulnerabilities and learning how to defend against them.</li>
-                <li className=" mt-3 list-star">🤖 I’m deeply interested in Deep Learning and Artificial Intelligence, always striving to build smarter and innovative systems.</li>
+                <li className=" mt-3 list-building">My journey began with a diploma in Mechanical Engineering, giving me a unique problem-solving edge and design perspective.</li>
+                <li className=" mt-3 list-time">🌐 I specialize in creating secure, modern web & mobile applications, working across multiple programming languages and frameworks.( Hit me up <a className='text-underline' href='mailto:krishnabaviskar40@gmail.com'><u>@krishnabaviskar40@gmail.com</u></a>)</li>
+                
                 <li className=" mt-3 list-star">⚙️ DevOps excites me! I’m on the path to becoming a DevOps Engineer, passionate about automation, cloud deployment, and building resilient infrastructure.</li>
-                <li className=" mt-3 list-star">🤖⚡ I’m also fascinated by Robotics Automation—integrating intelligent solutions to automate processes and drive tech transformation.</li>
+                
                 <li className=" mt-3 list-star">👾 When I’m not coding, you’ll find me:</li>
+                <li className=" mt-3 list-star">-🤝 Contributing to open-source projects</li>
                 <li className=" mt-3 list-star">- 🔍 Researching new security threats</li>
-                <li className=" mt-3 list-star">- 🤝 Contributing to open-source projects</li>
                 <li className=" mt-3 list-star">- 🧠 Diving into emerging technologies that shape our digital future</li>
                 <li className=" mt-3 list-star">Let’s connect and build something amazing together! ✨</li>
             </ul>
@@ -239,31 +238,99 @@ function Skills() {
 function Projects() {
     const project_list = [
         {
-            name: "Krishna's Portfolio",
-            date: "Jan 2023",
-            link: "https://github.com/krishnabaviskar40/portfolio",
+            name: "Krishna's Portfolio- For more Projects Click Here.....",
+            date: "Sept 2025",
+            link: "https://github.com/krishna-baviskar?tab=repositories",
             description: [
                 "Personal portfolio website showcasing my projects and skills.",
             ],
-            domains: ["javascript", "react.js", "tailwindcss"]
+            domains: ["typescript", "Nextjs", "tailwindcss"]
         },
         {
-            name: "Task Manager App",
-            date: "Dec 2022",
-            link: "https://github.com/krishnabaviskar40/task-manager",
+            name: "Flipkart Clone with AI integration for Product Summaries",
+            date: "Aug 2025",
+            link: "https://github.com/krishna-baviskar/Flipkart-clone",
             description: [
-                "A web-based task manager application with user authentication.",
+                "Modern Flipkart-style e-commerce app with Next.js TypeScript Tailwind CSS cart/wishlist and AI summaries",
             ],
-            domains: ["javascript", "node.js", "express.js", "mongodb"]
+            domains: ["Nextjs", "typescript", "express.js", "mongodb","tailwindcss"]
         },
         {
-            name: "E-commerce Backend",
-            date: "Nov 2022",
-            link: "https://github.com/krishnabaviskar40/ecommerce-backend",
+            name: "KK-Computers Institute website",
+            date: "July 2025",
+            link: "https://github.com/krishna-baviskar/KK_Computers_Web",
             description: [
-                "A robust backend for an e-commerce platform built with Node.js and Express.",
+                "A comprehensive web application for KK Computers, designed to manage services, inventory, and customer interactions efficiently.",
             ],
-            domains: ["javascript", "node.js", "express.js", "postgresql"]
+            domains: ["react.js", "node.js", "tailwindcss" ]
+        },
+        {
+            name: "PD&C website",
+            date: "January 2025",
+            link: "https://github.com/krishna-baviskar?tab=repositories",
+            description: [
+                "A full-featured e-commerce application with product listings, and secure checkout functionality for PD&C.",
+            ],
+            domains: ["Nextjs", "typescript",  "mongodb", "tailwindcss"]
+        },
+        {
+            name: "Blogify App",
+            date: "June 2025",
+            link: "https://github.com/krishna-baviskar?tab=repositories",
+            description: [
+                "A feature-rich blog application enabling users to create, edit, and share their thoughts with a global audience.",
+            ],
+            domains: ["react.js", "node.js", "mongodb", "tailwindcss"]
+        },
+        
+        {
+            name: "NexMov AI",
+            date: "May 2025",
+            link: "https://github.com/krishna-baviskar?tab=repositories",
+            description: [
+                "A dynamic AI aggregator that adapts to user behaviours, Market trends, and Personal growth for personalized advise to user, tailored to user interests.",
+            ],
+            domains: ["Nextjs", "typescript", "python", "node.js", "mongodb", "tailwindcss"]
+        },
+        
+        
+        
+        {
+            name: "EcoVerse",
+            date: "March 2025",
+            link: "https://github.com/krishna-baviskar?tab=repositories",
+            description: [
+                "A AI weather application that provides real-time weather and Climate updates and forecasts for any location worldwide with AI.",
+            ],
+            domains: ["Nextjs", "typescript", "python", "tailwindcss"]
+        },
+        {
+            name: "Vinite",
+            date: "February 2025",
+            link: "https://github.com/krishna-baviskar?tab=repositories",
+            description: [
+                "A movie and video database application that allows users to search for movies, view details, and create watchlists.",
+            ],
+            domains: ["react.js", "node.js", "mongodb", "tailwindcss"]
+        },
+        
+        {
+            name: "SysChat ",
+            date: "December 2024",
+            link: "https://github.com/krishna-baviskar?tab=repositories",
+            description: [
+                "A real-time chat application that enables users to communicate with each other instantly.",
+            ],
+            domains: ["react.js", "node.js", "mongodb", "tailwindcss"]
+        },
+        {
+            name: "To-Do App",
+            date: "April 2025",
+            link: "https://github.com/krishna-baviskar?tab=repositories",
+            description: [
+                "A simple yet powerful to-do list application to help you stay organized and productive throughout your day.",
+            ],
+            domains: ["react.js", "node.js", "mongodb", "tailwindcss"]
         },
     ];
 
@@ -343,6 +410,6 @@ function Projects() {
 }
 function Resume() {
     return (
-        <iframe className="h-full w-full" src="./files/Vivek-Patel-Resume.pdf" title="krishna resume" frameBorder="0"></iframe>
+        <iframe className="h-full w-full" src="./files/Krishna Resume.pdf" title="Krishna Resume" frameBorder="0"></iframe>
     )
 }
