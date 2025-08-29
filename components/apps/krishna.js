@@ -5,23 +5,21 @@ export class AboutKrishna extends Component {
 
     constructor() {
         super();
-        this.screens = {};
-        this.state = {
-            screen: () => { },
-            active_screen: "about", // by default 'about' screen is active
-            navbar: false,
-        }
-    }
-
-    componentDidMount() {
         this.screens = {
             "about": <About />,
             "education": <Education />,
             "skills": <Skills />,
             "projects": <Projects />,
             "resume": <Resume />,
+        };
+        this.state = {
+            screen: <About />,
+            active_screen: "about", // by default 'about' screen is active
+            navbar: false,
         }
+    }
 
+    componentDidMount() {
         let lastVisitedScreen = localStorage.getItem("about-section");
         if (lastVisitedScreen === null || lastVisitedScreen === undefined) {
             lastVisitedScreen = "about";
@@ -118,23 +116,23 @@ function About() {
             </div>
             <div className=" mt-4 md:mt-8 text-lg md:text-2xl text-center px-1">
                 <div>Hi, I am <span className="font-bold">Krishna Baviskar</span></div>
-                <div className="font-normal ml-1">I'm a <span className="text-pink-600 font-bold">Software Developer | with AI, DevOps, CyberSecurity & Robotics Enthusiast</span></div>
+                <div className="font-normal ml-1">I'm a <span className="text-pink-600 font-bold">Software Developer | with AI, DevOps & Robotics Enthusiast</span></div>
             </div>
             <div className=" mt-4 relative md:my-8 pt-px bg-white w-32 md:w-48">
                 <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-0"></div>
                 <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-0"></div>
             </div>
             <ul className=" mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list">
-                <li className=" list-pc">I’m currently pursuing a B.Tech in Computer Engineering!</li>
-                <li className=" mt-3 list-building">My journey began with a diploma in Mechanical Engineering, giving me a unique problem-solving edge and design perspective.</li>
+                <li className=" list-pc">I’m currently pursuing a B.Tech in Computer Engineering!, began with a diploma in Mechanical Engineering, giving me a unique problem-solving edge and design perspective.</li>
+                
                 <li className=" mt-3 list-time">🌐 I specialize in creating secure, modern web & mobile applications, working across multiple programming languages and frameworks.( Hit me up <a className='text-underline' href='mailto:krishnabaviskar40@gmail.com'><u>@krishnabaviskar40@gmail.com</u></a>)</li>
                 
-                <li className=" mt-3 list-star">⚙️ DevOps excites me! I’m on the path to becoming a DevOps Engineer, passionate about automation, cloud deployment, and building resilient infrastructure.</li>
+                <li className=" mt-3 list-star">⚙️ DevOps excites me! I’m on the path to becoming a DevOps Engineer, passionate about automation, cloud deployment, and building resilient infrastructure. fascinated by Robotics Automation—integrating intelligent solutions to automate processes and drive tech transformation.</li>
                 
-                <li className=" mt-3 list-star">👾 When I’m not coding, you’ll find me:</li>
-                <li className=" mt-3 list-star">-🤝 Contributing to open-source projects</li>
-                <li className=" mt-3 list-star">- 🔍 Researching new security threats</li>
-                <li className=" mt-3 list-star">- 🧠 Diving into emerging technologies that shape our digital future</li>
+                <li className=" mt-3 list-building">👾 When I’m not coding, you’ll find me:</li>
+                <li className=" mt-3 list-star">-🤝 Contributing to open-source projects and collaboration</li>
+                <li className=" mt-3 list-star">- 🔍 Researching on new AI Automations and Workflows to improve efficiency</li>
+                <li className=" mt-3 list-star">- 🧠 Diving into emerging technologies that shape our digital future </li>
                 <li className=" mt-3 list-star">Let’s connect and build something amazing together! ✨</li>
             </ul>
         </>
